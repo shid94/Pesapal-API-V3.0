@@ -24,5 +24,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 echo $response = curl_exec($ch);
 $responseCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 curl_close($ch);
+$data = json_decode($response);
+$payment_status_description = $data->payment_status_description;
 
 
