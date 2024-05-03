@@ -6,8 +6,8 @@ if(APP_ENVIROMENT == 'sandbox'){
     $consumerSecret = "osGQ364R49cXKeOYSpaOnT++rHs=";
 }elseif(APP_ENVIROMENT == 'live'){
     $apiUrl = "https://pay.pesapal.com/v3/api/Auth/RequestToken"; // Live URL
-    $consumerKey = "6ShrRvI85UP+yqjXn7umZNWhG1JeyLot";
-    $consumerSecret = "e6YthdhusUkjvpuE9ijefkY53II=";
+    $consumerKey = "";
+    $consumerSecret = "";
 }else{
     echo "Invalid APP_ENVIROMENT";
     exit;
